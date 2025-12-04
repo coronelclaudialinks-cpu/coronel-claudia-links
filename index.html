@@ -14,15 +14,15 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            background-color: #0097b2; /* FUNDO GERAL */
+            background-color: #0097b2; /* FUNDO GERAL AZUL (MANTIDO) */
         }
         .container {
             width: 100%;
             max-width: 450px; 
             padding: 20px;
             box-sizing: border-box;
-            background-color: #0097b2; /* AGORA AZUL IGUAL AO FUNDO */
-            color: white; /* COR DO TEXTO PRINCIPAL NO CONTÊINER */
+            background-color: #0097b2; /* CONTAINER TAMBÉM AZUL (MANTIDO) */
+            color: #333; /* COR DO TEXTO PRINCIPAL (CINZA ESCURO) */
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
             text-align: center;
         }
@@ -34,14 +34,14 @@
             object-fit: cover;
             margin: 20px auto 10px auto; 
             display: block;
-            border: 3px solid white; /* Borda agora é branca para destacar no fundo azul */
+            border: 3px solid #5d0f19; /* Borda da foto (cor do botão) */
         }
         .link-button {
             display: block;
             width: 90%;
             padding: 15px;
             margin: 15px auto;
-            background-color: #5d0f19; /* Cor de destaque dos botões */
+            background-color: #5d0f19; /* Cor de destaque dos botões (MANTIDO) */
             color: white;
             text-decoration: none;
             border-radius: 8px;
@@ -52,16 +52,25 @@
         .link-button:hover {
             background-color: #7b1322;
         }
+        /* Títulos agora em preto */
         .title {
             margin-bottom: 5px;
             font-size: 24px;
             font-weight: bold;
-            color: white; /* Título em branco */
+            color: #000; /* TÍTULO PRETO */
         }
         .subtitle {
             margin-top: 0;
             font-size: 18px;
-            color: white; /* Subtítulo em branco */
+            color: #000; /* SUBTÍTULO PRETO */
+        }
+        /* Descrição e Link Social em preto */
+        .container p {
+            color: #333; /* Descrição cinza escuro */
+        }
+        .container a:not(.link-button) {
+            color: #5d0f19; /* Link social na cor do botão para destaque */
+            font-weight: bold;
         }
     </style>
 </head>
@@ -72,7 +81,7 @@
         
         <div class="title">Coronel Cláudia Lira</div>
         <div class="subtitle">vice-prefeita</div>
-        <p style="font-size: 14px; color: white; margin-bottom: 30px;">
+        <p style="font-size: 14px; margin-bottom: 30px;">
             Vice-Prefeita de Goiânia e Coronel da PMGO, dedica sua 
             trajetória ao serviço público com responsabilidade, coragem e 
             compromisso com Goiânia.
@@ -85,7 +94,7 @@
         
         <p style="margin-top: 30px;">
             Siga no Instagram: 
-            <a href="https://www.instagram.com/coronelclaudialira/" target="_blank" style="color: white; font-weight: bold;">@coronelclaudialira</a>
+            <a href="https://www.instagram.com/coronelclaudialira/" target="_blank">@coronelclaudialira</a>
         </p>
     </div>
 </body>
